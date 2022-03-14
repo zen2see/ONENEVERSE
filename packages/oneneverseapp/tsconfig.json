@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "helpers/types"
+    ],
+    "noEmit": true,
+    "allowJs": false,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "incremental": true,
+    "target": "ESNext",
+    "skipLibCheck": true,
+  },
+  "rootDir": ".",
+  "baseUrl": ".",
+  "outDir": "dist",
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/**/*.ts",
+    "src/helpers/__global.ts",
+    "src/pages/_app.tsx",
+    "./scripts",
+    "./test",
+    "next.config.js",
+    "postcss.config.js",
+    "tailwind.config.js"
+  ],
+  "files": [
+    "../hardhat/hardhat.config.ts"
+  ],
+  "paths": {
+    "~~/*": [
+      "./src/*"
+    ]
+  },
+  "exclude": [
+    "**/node_modules",
+    ".husky",
+    "./src/styles/css",
+    "tailwind.config.js",
+    "node_modules",
+    "**/.yalc/**/*",
+    ".yalc/**/*"
+  ]
+}

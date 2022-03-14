@@ -1,0 +1,69 @@
+{
+  "include": [
+    "./scripts/**/*",
+    "./test/**/*",
+    "./helpers/**/*",
+    "./hardhat.config.ts",
+    "./deploy",
+    "./utils"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "Example",
+    "build",
+    "dist"
+  ],
+  "compilerOptions": {
+    "exactOptionalPropertyTypes": true,
+    "noImplicitAny": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "baseUrl": ".",
+    "module": "commonJS",
+    "moduleResolution": "node",
+    "paths": {
+      "~~/*": [
+        "./src/*"
+      ],
+      "scripts/*": [
+        "./scripts/*"
+      ],
+      "helpers/*": [
+        "./helpers/*"
+      ],
+      "contracts/*": [
+        "./contracts/*"
+      ],
+      "tests/*": [
+        "./tests/*"
+      ],
+      "typechain/*": [
+        "./typechain/*"
+      ]
+    },
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "typeRoots": [
+      "node_modules/@types",
+      "src/helpers/definitions",
+      "./types",
+      "./typechain"
+    ],
+    "declaration": true,
+    "declarationDir": "./types",
+    "declarationMap": true,
+    "outDir": "dist",
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": false,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "target": "ESNext",
+    "incremental": true
+  },
+}
